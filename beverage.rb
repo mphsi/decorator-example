@@ -1,9 +1,14 @@
 # frozen_string_literal: true
 
 class Beverage
-  attr_accessor :description
+  attr_reader :description
+
+  def initialize(description, cost)
+    @description = description
+    @cost = cost
+  end
 
   def cost
-    0.0
+    @cost
   end
 end

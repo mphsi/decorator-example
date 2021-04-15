@@ -2,19 +2,10 @@
 
 require 'rspec'
 require_relative '../beverage'
+require_relative 'shared_examples/a_beverage'
 
 RSpec.describe Beverage do
-  subject(:beverage) { described_class.new }
+  subject(:beverage) { described_class.new('A hot drink', 1.0) }
 
-  describe 'description' do
-    it 'is initialized nil' do
-      expect(subject.description).to be_nil
-    end
-  end
-
-  describe '#cost' do
-    it 'returns 0.0' do
-      expect(subject.cost).to eq(0.0)
-    end
-  end
+  it_should_behave_like 'a beverage', 'A hot drink', 1.0
 end
