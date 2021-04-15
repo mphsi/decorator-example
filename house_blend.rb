@@ -2,7 +2,6 @@
 
 class HouseBlend < Beverage
   def initialize
-    @description = 'House Blend'
-    @cost = 0.99
+    super('House Blend', 0.89)
   end
 end
