@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'rspec'
-require_relative '../dark_roast'
+require_relative '../lib/dark_roast'
 
 RSpec.describe DarkRoast do
   subject(:dark_roast) { described_class.new }

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'rspec'
-require_relative '../house_blend'
+require_relative '../lib/house_blend'
 
 RSpec.describe HouseBlend do
   subject(:house_blend) { described_class.new }

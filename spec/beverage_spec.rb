@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'rspec'
-require_relative '../beverage'
+require_relative '../lib/beverage'
 require_relative 'shared_examples/a_beverage'
 
 RSpec.describe Beverage do
