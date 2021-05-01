@@ -19,4 +19,8 @@ Written in the context of a Coffee Shop where multiple beverages are sold. Each 
 - Whip - $.10
 
 ## Tests
-TBD
+
+Run test suite
+```
+bundle exec rspec spec
+```
